@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xKL-Ua-9aX" customClass="NewsCollectionViewCell" customModule="NewsToYou" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="weL-jX-1rr">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-kE-LjH">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="276"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aYL-kE-LjH" secondAttribute="bottom" id="8i5-JG-M0L"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="top" secondItem="weL-jX-1rr" secondAttribute="top" id="JpA-Ht-zzo"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="WWb-67-Vaw"/>
+                    <constraint firstAttribute="trailing" secondItem="aYL-kE-LjH" secondAttribute="trailing" id="gBI-VS-46c"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="338" height="276"/>
+            <point key="canvasLocation" x="188.40579710144928" y="-139.28571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

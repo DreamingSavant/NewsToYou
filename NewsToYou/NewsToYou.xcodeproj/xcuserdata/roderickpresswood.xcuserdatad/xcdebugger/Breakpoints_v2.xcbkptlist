@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0F99ADC4-BA86-4E82-8462-82E66010F9C5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C756224A-0187-463F-961D-6115B4B0C86B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsToYou/FirstViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(coder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C756224A-0187-463F-961D-6115B4B0C86B - d658a4c590d44d5e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NewsToYou.FirstViewController&gt;"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "C756224A-0187-463F-961D-6115B4B0C86B - 512f6088e42f3052"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NewsToYou.FirstViewController&gt;"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "90">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getNewArticles(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE - 34283c341f884d36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.NetworkManager.getNewArticles(completion: (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsDataModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/Networking/Manager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE - dd50edf0c862ec1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NewsToYou.NetworkManager.getNewArticles(completion: (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsDataModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/Networking/Manager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "259">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E1567F4-FDC1-4E34-80CD-1D3B813034A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsToYou/FirstViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E1567F4-FDC1-4E34-80CD-1D3B813034A3 - af41372728c9ab04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "429">
+               </Location>
+               <Location
+                  uuid = "2E1567F4-FDC1-4E34-80CD-1D3B813034A3 - b1f256a631976b09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsDataModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in NewsToYou.FirstViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "143">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD6A89FB-065E-41EF-8305-E1A2A6D6C293"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsToYou/FirstViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init(networkManager:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsToYou/FirstViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "FirstViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - 906b2c33c1c0c7f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.networkManager.getter : NewsToYou.NetworkManager"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - 3045582cc91c470c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.networkManager.setter : NewsToYou.NetworkManager"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - df2fa743450af7fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.networkManager.modify : NewsToYou.NetworkManager"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - d155128b9b7a3a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsToYou.FirstViewController.networkManager.modify : NewsToYou.NetworkManager with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NewsToYou"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
