@@ -48,9 +48,8 @@ struct NewsModel: Decodable {
 extension NewsResponse: Decodable {
     
     private enum NewsApiResponseCodingKeys: String, CodingKey {
-//        case page
+
         case numberOfResults = "totalResults"
-//        case numberOfPages = "total_pages"
         case articles = "articles"
     }
     
