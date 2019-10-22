@@ -19,8 +19,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-kE-LjH">
                         <rect key="frame" x="0.0" y="0.0" width="255" height="195"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-EA-uVv">
-                        <rect key="frame" x="0.0" y="156" width="255" height="39"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-EA-uVv">
+                        <rect key="frame" x="0.0" y="177" width="255" height="18"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <nil key="highlightedColor"/>
@@ -28,14 +28,13 @@
                 </subviews>
                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="rsN-EA-uVv" secondAttribute="bottom" id="3OI-eg-Wqv"/>
-                    <constraint firstItem="rsN-EA-uVv" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="8bG-2p-0Hb"/>
-                    <constraint firstAttribute="bottom" secondItem="aYL-kE-LjH" secondAttribute="bottom" id="8i5-JG-M0L"/>
-                    <constraint firstAttribute="trailing" secondItem="rsN-EA-uVv" secondAttribute="trailing" id="BhE-MX-xMZ"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="top" secondItem="weL-jX-1rr" secondAttribute="top" id="JpA-Ht-zzo"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="WWb-67-Vaw"/>
-                    <constraint firstItem="rsN-EA-uVv" firstAttribute="height" secondItem="aYL-kE-LjH" secondAttribute="height" multiplier="0.2" id="cEO-4o-HMQ"/>
-                    <constraint firstAttribute="trailing" secondItem="aYL-kE-LjH" secondAttribute="trailing" id="gBI-VS-46c"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="trailing" secondItem="rsN-EA-uVv" secondAttribute="trailing" id="5KL-bs-dbl"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="centerX" secondItem="weL-jX-1rr" secondAttribute="centerX" id="68G-AV-95h"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="rsN-EA-uVv" secondAttribute="leading" id="9Fe-6J-e5Z"/>
+                    <constraint firstItem="rsN-EA-uVv" firstAttribute="bottom" secondItem="aYL-kE-LjH" secondAttribute="bottom" id="QNx-Qd-H8q"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="TL4-O9-IRr"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="top" secondItem="weL-jX-1rr" secondAttribute="top" id="UID-gZ-Pyz"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="centerY" secondItem="weL-jX-1rr" secondAttribute="centerY" id="uSe-Ts-DPd"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="255" height="195"/>
