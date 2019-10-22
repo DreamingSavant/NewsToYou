@@ -35,6 +35,7 @@ class NewsCollectionViewController: UIViewController {
         super.viewDidLoad()
         setup()
         getNewsArticles()
+        collectionView.reloadData()
     }
     
     func getNewsArticles(){
@@ -56,9 +57,9 @@ class NewsCollectionViewController: UIViewController {
     }
 }
 
-extension NewsCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension NewsCollectionViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return newsModels.count / 2
+        return newsModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -68,9 +69,9 @@ extension NewsCollectionViewController: UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 50, height: 50)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width , height: 200)
+    }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let newsForRow = newsModels[indexPath.row]
@@ -78,5 +79,7 @@ extension NewsCollectionViewController: UICollectionViewDelegate, UICollectionVi
         detailNewsController.currentNewsArticle = newsForRow
         navigationController?.pushViewController(detailNewsController, animated: true)
     }
+    
+
 }
 

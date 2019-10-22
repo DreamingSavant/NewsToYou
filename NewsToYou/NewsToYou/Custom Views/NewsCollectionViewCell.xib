@@ -10,17 +10,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCollectionViewCell" id="xKL-Ua-9aX" customClass="NewsCollectionViewCell" customModule="NewsToYou" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="255" height="195"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="weL-jX-1rr">
-                <rect key="frame" x="0.0" y="0.0" width="255" height="195"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-kE-LjH">
-                        <rect key="frame" x="0.0" y="0.0" width="255" height="195"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-kE-LjH">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-EA-uVv">
-                        <rect key="frame" x="0.0" y="177" width="255" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test example for label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-EA-uVv">
+                        <rect key="frame" x="0.0" y="182" width="200" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="25p-Qv-k0D"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <nil key="highlightedColor"/>
@@ -28,13 +31,13 @@
                 </subviews>
                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 <constraints>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="trailing" secondItem="rsN-EA-uVv" secondAttribute="trailing" id="5KL-bs-dbl"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="centerX" secondItem="weL-jX-1rr" secondAttribute="centerX" id="68G-AV-95h"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="rsN-EA-uVv" secondAttribute="leading" id="9Fe-6J-e5Z"/>
-                    <constraint firstItem="rsN-EA-uVv" firstAttribute="bottom" secondItem="aYL-kE-LjH" secondAttribute="bottom" id="QNx-Qd-H8q"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="TL4-O9-IRr"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="top" secondItem="weL-jX-1rr" secondAttribute="top" id="UID-gZ-Pyz"/>
-                    <constraint firstItem="aYL-kE-LjH" firstAttribute="centerY" secondItem="weL-jX-1rr" secondAttribute="centerY" id="uSe-Ts-DPd"/>
+                    <constraint firstAttribute="bottom" secondItem="aYL-kE-LjH" secondAttribute="bottom" id="5D8-b8-2hp"/>
+                    <constraint firstAttribute="trailing" secondItem="aYL-kE-LjH" secondAttribute="trailing" id="8Bx-hc-UQc"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="top" secondItem="weL-jX-1rr" secondAttribute="top" id="EGe-LR-X4n"/>
+                    <constraint firstAttribute="bottom" secondItem="rsN-EA-uVv" secondAttribute="bottom" id="Ug6-ie-tBo"/>
+                    <constraint firstAttribute="trailing" secondItem="rsN-EA-uVv" secondAttribute="trailing" id="V23-IS-nLt"/>
+                    <constraint firstItem="rsN-EA-uVv" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="l1q-ME-J5U"/>
+                    <constraint firstItem="aYL-kE-LjH" firstAttribute="leading" secondItem="weL-jX-1rr" secondAttribute="leading" id="xDa-IW-35z"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="255" height="195"/>
@@ -42,7 +45,7 @@
                 <outlet property="articleTitleLabel" destination="rsN-EA-uVv" id="H0B-V8-ojP"/>
                 <outlet property="imageView" destination="aYL-kE-LjH" id="nj7-Ll-0dj"/>
             </connections>
-            <point key="canvasLocation" x="128.2608695652174" y="-112.16517857142857"/>
+            <point key="canvasLocation" x="127.53623188405798" y="-112.5"/>
         </collectionViewCell>
     </objects>
 </document>
