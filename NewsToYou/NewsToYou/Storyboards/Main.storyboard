@@ -4,11 +4,10 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News Collection View Controller-->
+        <!--Top News-->
         <scene sceneID="c6j-Ym-eC4">
             <objects>
                 <viewController id="fMK-ig-H2q" customClass="NewsCollectionViewController" customModule="NewsToYou" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,16 +24,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DL1-0K-UN4" customClass="NewsCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x3I-OS-cXI">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -46,34 +36,37 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ead-ea-gd3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xTw-ti-DK7"/>
+                    <navigationItem key="navigationItem" title="Top News" id="xTw-ti-DK7"/>
+                    <connections>
+                        <outlet property="collectionView" destination="HvO-az-xUR" id="zTB-yQ-yFY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOu-7p-wYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="851" y="-95"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed News Controller-->
         <scene sceneID="Lhs-tB-4a6">
             <objects>
-                <viewController id="UHr-sd-geK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailedNewsController" id="UHr-sd-geK" customClass="DetailedNewsController" customModule="NewsToYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GKo-WE-Qcb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12h-FP-DaE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12h-FP-DaE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="491"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsh-vf-Cst">
-                                <rect key="frame" x="0.0" y="408" width="414" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsh-vf-Cst">
+                                <rect key="frame" x="0.0" y="491" width="414" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GrY-fT-1mt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MdF-YE-8us">
-                                <rect key="frame" x="0.0" y="475" width="414" height="421"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MdF-YE-8us">
+                                <rect key="frame" x="0.0" y="571" width="414" height="325"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -82,8 +75,27 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="12h-FP-DaE" firstAttribute="leading" secondItem="fpm-a2-7Pt" secondAttribute="leading" id="07F-6e-s8M"/>
+                            <constraint firstItem="rsh-vf-Cst" firstAttribute="trailing" secondItem="fpm-a2-7Pt" secondAttribute="trailing" id="A8i-Lw-H1o"/>
+                            <constraint firstItem="MdF-YE-8us" firstAttribute="leading" secondItem="fpm-a2-7Pt" secondAttribute="leading" id="G5q-ft-KoS"/>
+                            <constraint firstItem="12h-FP-DaE" firstAttribute="centerX" secondItem="fpm-a2-7Pt" secondAttribute="centerX" id="InJ-ca-8eB"/>
+                            <constraint firstItem="12h-FP-DaE" firstAttribute="height" secondItem="fpm-a2-7Pt" secondAttribute="height" multiplier="0.6" id="Kih-Og-wSv"/>
+                            <constraint firstAttribute="bottom" secondItem="MdF-YE-8us" secondAttribute="bottom" id="KsK-ht-eop"/>
+                            <constraint firstItem="rsh-vf-Cst" firstAttribute="leading" secondItem="fpm-a2-7Pt" secondAttribute="leading" id="R9Y-Au-Py8"/>
+                            <constraint firstItem="rsh-vf-Cst" firstAttribute="top" secondItem="12h-FP-DaE" secondAttribute="bottom" id="Rro-g8-z3Y"/>
+                            <constraint firstItem="12h-FP-DaE" firstAttribute="trailing" secondItem="fpm-a2-7Pt" secondAttribute="trailing" id="Szi-Tl-Nxa"/>
+                            <constraint firstItem="MdF-YE-8us" firstAttribute="top" secondItem="rsh-vf-Cst" secondAttribute="bottom" id="Yz9-vv-BMI"/>
+                            <constraint firstItem="MdF-YE-8us" firstAttribute="trailing" secondItem="fpm-a2-7Pt" secondAttribute="trailing" id="hi2-hM-rmX"/>
+                            <constraint firstItem="12h-FP-DaE" firstAttribute="top" secondItem="fpm-a2-7Pt" secondAttribute="top" constant="-44" id="xgR-Td-sSc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fpm-a2-7Pt"/>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="MdF-YE-8us" id="dzq-Va-bcY"/>
+                        <outlet property="imageView" destination="12h-FP-DaE" id="bUY-Lg-xdK"/>
+                        <outlet property="titleLabel" destination="rsh-vf-Cst" id="w6u-ad-hTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOn-HC-wpP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

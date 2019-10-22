@@ -9,13 +9,11 @@
 import Foundation
 
 struct NewsResponse {
-//    let page: Int
     let numberOfResults: Int
-//    let numberOfPages: Int
-    let articles: [NewsDataModel]
+    let articles: [NewsModel]
 }
 
-struct NewsDataModel: Decodable {
+struct NewsModel: Decodable {
     var author: String?
     var title: String?
     var description: String?
@@ -37,13 +35,13 @@ struct NewsDataModel: Decodable {
     init(from decoder: Decoder) throws {
         let articleContainer = try decoder.container(keyedBy: NewsCodingKeys.self)
         
-        author = try articleContainer.decode(String.self, forKey: .author)
-        title = try articleContainer.decode(String.self, forKey: .title)
-        description = try articleContainer.decode(String.self, forKey: .description)
-        urlToImage = try articleContainer.decode(String.self, forKey: .urlToImage)
-        publishedAt = try articleContainer.decode(String.self, forKey: .publishedAt)
-        content = try articleContainer.decode(String.self, forKey: .content)
-        url = try articleContainer.decode(String.self, forKey: .url)
+        author = try articleContainer.decodeIfPresent(String.self, forKey: .author)
+        title = try articleContainer.decodeIfPresent(String.self, forKey: .title)
+        description = try articleContainer.decodeIfPresent(String.self, forKey: .description)
+        urlToImage = try articleContainer.decodeIfPresent(String.self, forKey: .urlToImage)
+        publishedAt = try articleContainer.decodeIfPresent(String.self, forKey: .publishedAt)
+        content = try articleContainer.decodeIfPresent(String.self, forKey: .content)
+        url = try articleContainer.decodeIfPresent(String.self, forKey: .url)
     }
 }
 
@@ -59,10 +57,8 @@ extension NewsResponse: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: NewsApiResponseCodingKeys.self)
         
-//        page = try container.decode(Int.self, forKey: .page)
         numberOfResults = try container.decode(Int.self, forKey: .numberOfResults)
-//        numberOfPages = try container.decode(Int.self, forKey: .numberOfPages)
-        articles = try container.decode([NewsDataModel].self, forKey: .articles)
+        articles = try container.decode([NewsModel].self, forKey: .articles)
         
     }
 }

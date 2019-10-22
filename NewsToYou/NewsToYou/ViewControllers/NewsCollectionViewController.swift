@@ -10,7 +10,17 @@ import UIKit
 
 class NewsCollectionViewController: UIViewController {
 
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     var networkManager = NetworkManager()
+    var newsModels = [NewsModel]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
     
     init(networkManager: NetworkManager) {
         super.init(nibName: nil, bundle: nil)
@@ -18,23 +28,55 @@ class NewsCollectionViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        networkManager.getNewArticles(/*page: nil*/) { articles, error in
+        setup()
+        getNewsArticles()
+    }
+    
+    func getNewsArticles(){
+        networkManager.getNewArticles(/*page: nil*/) { [weak self] articles, error in
             if let error = error {
                 print(error)
             }
             if let articles = articles {
-                print(articles)
+                self?.newsModels = articles
+                print("Number of articles: \(articles.count)")
             }
         }
     }
+    
+    func setup() {
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(UINib(nibName: NewsCollectionViewCell.identifier, bundle: Bundle.main), forCellWithReuseIdentifier: NewsCollectionViewCell.identifier)
+    }
+}
 
+extension NewsCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return newsModels.count / 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsCollectionViewCell.identifier, for: indexPath) as! NewsCollectionViewCell
+        let newsCellAtRow = newsModels[indexPath.row]
+        cell.newsData = newsCellAtRow
+        return cell
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: 50, height: 50)
+//    }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let newsForRow = newsModels[indexPath.row]
+        let detailNewsController = storyboard?.instantiateViewController(identifier: "DetailedNewsController") as! DetailedNewsController
+        detailNewsController.currentNewsArticle = newsForRow
+        navigationController?.pushViewController(detailNewsController, animated: true)
+    }
 }
 

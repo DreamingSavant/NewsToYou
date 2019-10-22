@@ -33,7 +33,7 @@ extension NewsApi: EndPointType {
     var path: String {
         switch self {
         case .topHeadlines:
-            return "top-headlines?country=us"
+            return "top-headlines"
         case .allNews:
             return "everything?q=Apple?from=2019-10-18?sortBy=popularity"
         }
@@ -48,7 +48,8 @@ extension NewsApi: EndPointType {
         case .topHeadlines:
             return .requestParameters(bodyParameters: nil,
                                       urlParameters: [/*"page":page,*/
-                                                "api_Key":NetworkManager.newsApiKey])
+                                                "apiKey":NetworkManager.newsApiKey,
+            "country": "us"])
         default:
             return .request
         }

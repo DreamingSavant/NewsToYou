@@ -11,7 +11,7 @@ import Foundation
 struct NetworkManager {
     
     static let environment: NetworkEnvironment = .production
-    static let newsApiKey = "&apiKey=543444e7d3514e0b980f06ae94e0edaf"
+    static let newsApiKey = /*"&apiKey*/ "a716ea821cd5449db8cdacbdcea930aa" // 543444e7d3514e0b980f06ae94e0edaf"
     static let router = Router<NewsApi>()
     
     enum NetworkResponse: String {
@@ -39,7 +39,7 @@ struct NetworkManager {
         }
     }
     
-    func getNewArticles(/*page: Int?,*/ completion: @escaping (_ newsArticle: [NewsDataModel]?,_ error: String?)->()){
+    func getNewArticles(/*page: Int?,*/ completion: @escaping (_ newsArticle: [NewsModel]?,_ error: String?)->()){
 
         NetworkManager.router.request(.topHeadlines/*(page: page)*/) { data, response, error in
             if error != nil {

@@ -68,14 +68,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE - 34283c341f884d36"
+                  uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE - c078f16f310368cd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "NewsToYou.NetworkManager.getNewArticles(completion: (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsDataModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "NewsToYou.NetworkManager.getNewArticles(completion: (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "NewsToYou"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/Networking/Manager/NetworkManager.swift"
+                  urlString = "file:///Users/roderickpresswood/Downloads/NewsToYou/NewsToYou/Networking/Manager/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -83,14 +83,14 @@
                   offsetFromSymbolStart = "33">
                </Location>
                <Location
-                  uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE - dd50edf0c862ec1c"
+                  uuid = "7C065A5A-B6E2-445A-B71F-AFAC8ACACDAE - e8851923841c5b53"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NewsToYou.NetworkManager.getNewArticles(completion: (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsDataModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NewsToYou.NetworkManager.getNewArticles(completion: (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "NewsToYou"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/Networking/Manager/NetworkManager.swift"
+                  urlString = "file:///Users/roderickpresswood/Downloads/NewsToYou/NewsToYou/Networking/Manager/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
@@ -114,38 +114,6 @@
             endingLineNumber = "29"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2E1567F4-FDC1-4E34-80CD-1D3B813034A3 - af41372728c9ab04"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsToYou.FirstViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "NewsToYou"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "429">
-               </Location>
-               <Location
-                  uuid = "2E1567F4-FDC1-4E34-80CD-1D3B813034A3 - b1f256a631976b09"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;NewsToYou.NewsDataModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in NewsToYou.FirstViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "NewsToYou"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "143">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -178,68 +146,38 @@
             endingLineNumber = "13"
             landmarkName = "FirstViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - 906b2c33c1c0c7f8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsToYou.FirstViewController.networkManager.getter : NewsToYou.NetworkManager"
-                  moduleName = "NewsToYou"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - 3045582cc91c470c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsToYou.FirstViewController.networkManager.setter : NewsToYou.NetworkManager"
-                  moduleName = "NewsToYou"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - df2fa743450af7fd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsToYou.FirstViewController.networkManager.modify : NewsToYou.NetworkManager"
-                  moduleName = "NewsToYou"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "A71C3DE2-3972-4EF0-A273-F33090105E3C - d155128b9b7a3a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsToYou.FirstViewController.networkManager.modify : NewsToYou.NetworkManager with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "NewsToYou"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/roderickpresswood/Desktop/NewsToYou/NewsToYou/FirstViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC1E23B5-2407-456B-9FED-DCB783D1D1AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsToYou/ViewControllers/NewsCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6437BB9-BDAB-4F18-B00E-3DF1D52875F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsToYou/ViewControllers/DetailedNewsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "setup()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
